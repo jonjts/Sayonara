@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jonjts.seeit.ShowTime">
+
+    <GridView  android:id="@+id/grid"
+        android:layoutAnimation="@anim/layout_random_fade"
+
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="60dp"
+        android:stretchMode="columnWidth"
+
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/mensagem"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
